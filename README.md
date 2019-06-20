@@ -1,4 +1,4 @@
-# Docker-LAMP
+# Docker-LAMP-Nuxt
 
 - nginx
 - MariaDB
@@ -8,7 +8,10 @@
 
 ## How to start
 ```shell
-docker-compose up
+cd frontend
+yarn OR npm install
+cd ..
+docker-compose up 
 ```
 
 ## Ports
