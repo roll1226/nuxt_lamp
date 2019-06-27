@@ -3,6 +3,9 @@ import pkg from './package'
 export default {
   mode: 'spa',
   srcDir: 'src/',
+  server: {
+    port: '1000'
+  },
   /*
    ** Headers of the page
    */

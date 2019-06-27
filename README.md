@@ -28,7 +28,7 @@ docker-compose up --build
 - nginx 8080
 - MariaDB 13306
 - PHPMyAdmin 4040
-- Nuxt.js 3000
+- Nuxt.js 1000
 
 ## MariaDB
 ### Default root password
