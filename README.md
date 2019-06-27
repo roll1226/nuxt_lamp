@@ -11,8 +11,18 @@
 cd frontend
 yarn OR npm install
 cd ..
-docker-compose up 
+docker-compose up
 ```
+
+## mariadb.cnf change
+~~~
+cd mariadb
+vim mariadb.cnf
+
+++ default_time_zone='Asia/Tokyo' 
+
+docker-compose up --build
+~~~
 
 ## Ports
 - nginx 8080
