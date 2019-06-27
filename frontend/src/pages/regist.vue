@@ -6,13 +6,16 @@
     <input v-model="passwd" type="password" />
     <label>パスワード</label>
     <br />
-    <button @click="api()">ログイン</button>
-    {{ data }}
+    <button @click="api()">登録</button>
+    <h2>
+      {{ data }}
+    </h2>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+const php = 'http://localhost:8080/PH22/login/'
 
 export default {
   layout: 'pagebase',
@@ -21,7 +24,7 @@ export default {
       data: '',
       uid: '',
       passwd: '',
-      login: 'login',
+      regist: 'regist',
       headers: {
         'Content-Type': 'application/json;charset=UTF-8',
         'Access-Control-Allow-Origin': '*'
@@ -33,9 +36,9 @@ export default {
       const params = new URLSearchParams()
       params.append('user', this.uid)
       params.append('passwd', this.passwd)
-      params.append('login', this.login)
+      params.append('regist', this.regist)
       await axios
-        .post('http://localhost:8080/test_nuxt/test.php', params)
+        .post(php + 'db_old.php', params, this.headers)
         .then(response => {
           this.data = response.data
         })

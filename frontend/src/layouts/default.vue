@@ -1,7 +1,5 @@
 <template>
   <div>
-    <nuxt-link to="/login">ログイン</nuxt-link>
-    <nuxt-link to="/regist">登録</nuxt-link>
     <nuxt />
   </div>
 </template>

@@ -36,7 +36,7 @@ services:
         volumes:
             - ./frontend:/var/www/html/frontend
         ports:
-        - "3000:3000"
+        - "1000:3000"
     phpmyadmin:
         build: ./phpmyadmin
         environment:

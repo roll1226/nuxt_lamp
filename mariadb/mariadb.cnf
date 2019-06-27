@@ -19,4 +19,3 @@ default-character-set=utf8mb4
 # Import all .cnf files from configuration directory
 !includedir /etc/mysql/mariadb.conf.d/
 character-set-server=utf8mb4
-default_time_zone='Asia/Tokyo'
